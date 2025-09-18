@@ -22,8 +22,8 @@ import { Tabbar, TabbarItem } from 'vant'
 import { ref } from 'vue'
 import icon2 from '@/assets/icon/2.png'
 import icon8 from '@/assets/icon/8.png'
-import { useRouter } from 'vue-router'
 import { useConfigStore } from '@/store/config'
+import { useRouter } from 'vue-router'
 
 interface ITabBar {
     path: string

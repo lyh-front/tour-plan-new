@@ -84,12 +84,11 @@ const onScroll = () => {
     }
 }
 
-const weatherInfo = ref({})
+const weatherInfo = ref<any>({})
 const getWeather = async () => {
     const { AMap } = await useMap(['AMap.Weather'])
     const weather = new AMap.Weather()
     weather.getLive('平潭县', (err: any, data: any) => {
-        console.log(err, data)
         if (!err) {
             weatherInfo.value = data
         }

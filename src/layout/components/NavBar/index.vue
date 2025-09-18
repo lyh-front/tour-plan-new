@@ -7,16 +7,17 @@
 <script setup lang="ts">
 import { NavBar } from 'vant'
 import { useConfigStore } from '@/store/config'
-import { computed, onBeforeMount, onMounted, ref } from 'vue'
+import { computed, onBeforeMount, ref } from 'vue'
 import { useCurrentInstance } from '@/hooks/useCurrentInstance'
 
 const configStore = useConfigStore()
 const { proxy } = useCurrentInstance()
 
-const navBarTitle = computed(() => {
-    return configStore.state.activeRoute
-        ? configStore.state.activeRoute.meta.title
+const navBarTitle = computed<any>(() => {
+    const title = configStore.state.activeRoute
+        ? configStore.state.activeRoute?.meta.title
         : ''
+    return title
 })
 const isScroll = ref(false)
 
