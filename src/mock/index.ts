@@ -138,6 +138,16 @@ export const foods = [
         icon: '🦆',
         desc: '香香酥脆烤鸭',
     },
+    {
+        name: '肥婆肥仔',
+        icon: '🦆',
+        desc: '香香酥脆烤鸭',
+    },
+    {
+        name: '唐沫茶兮',
+        icon: '🦆',
+        desc: '香香酥脆烤鸭',
+    },
 ]
 
 // 行程点经纬度数据
