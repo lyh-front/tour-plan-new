@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig({
-    base: '/tour-plan-new',
+    base: '/tour-plan-new/',
     plugins: [vue()],
     resolve: {
         alias: {
