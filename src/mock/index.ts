@@ -140,18 +140,42 @@ export const foods = [
     },
     {
         name: '肥婆肥仔',
-        icon: '🦆',
-        desc: '香香酥脆烤鸭',
+        icon: '🍖',
+        desc: '本地人气烧烤，肉质鲜嫩',
     },
     {
         name: '唐沫茶兮',
-        icon: '🦆',
-        desc: '香香酥脆烤鸭',
+        icon: '🧋',
+        desc: '清爽茶饮，解腻必备',
+    },
+    {
+        name: '老船长海鲜排档',
+        icon: '🦞',
+        desc: '新鲜海鲜，现捞现做',
+    },
+    {
+        name: '转角咖啡馆',
+        icon: '☕',
+        desc: '文艺小资，咖啡香浓',
+    },
+    {
+        name: '甜心甜品铺',
+        icon: '🍰',
+        desc: '精美甜点，口感细腻',
+    },
+    {
+        name: '阿婆鱼丸',
+        icon: '🍢',
+        desc: 'Q弹鱼丸，汤头鲜美',
+    },
+    {
+        name: '清凉冰室',
+        icon: '🍧',
+        desc: '夏日消暑必备，种类丰富',
     },
 ]
 
 // 行程点经纬度数据
-
 export const linePosArr = ptLineArr.reduce((pre: any[], item) => {
     for (const spot of item.spots) {
         if (spot.pos.length != 0) {
@@ -163,3 +187,89 @@ export const linePosArr = ptLineArr.reduce((pre: any[], item) => {
     }
     return pre
 }, [])
+
+// Emoji表情集合
+export const emojis = {
+    // 天气相关
+    weather: {
+        sunny: '☀️',
+        cloudy: '☁️',
+        rainy: '🌧️',
+        stormy: '⛈️',
+        snowy: '❄️',
+        windy: '💨',
+        foggy: '🌫️',
+        sunset: '🌅',
+        sunrise: '🌄',
+        moon: '🌙',
+        stars: '⭐'
+    },
+    
+    // 旅行相关
+    travel: {
+        beach: '🏖️',
+        island: '🏝️',
+        mountain: '⛰️',
+        forest: '🌳',
+        lake: '🏞️',
+        river: '🌊',
+        waterfall: '💦',
+        cave: '🏔️',
+        road: '🛣️',
+        village: '🏘️',
+        city: '🏙️',
+        hotel: '🏨',
+        tent: '⛺',
+        car: '🚗',
+        bike: '🚲',
+        ship: '🚢',
+        plane: '✈️'
+    },
+    
+    // 心情相关
+    mood: {
+        happy: '😊',
+        excited: '🎉',
+        relaxed: '😌',
+        amazed: '😮',
+        tired: '😴',
+        hungry: '🍽️',
+        thirsty: '🥤',
+        love: '❤️',
+        cool: '😎',
+        cute: '🥰'
+    },
+    
+    // 活动相关
+    activity: {
+        hiking: '🥾',
+        swimming: '🏊',
+        diving: '🤿',
+        fishing: '🎣',
+        camping: '⛺',
+        photography: '📸',
+        picnic: '🧺',
+        sightseeing: '👀',
+        shopping: '🛍️',
+        eating: '🍴'
+    }
+}
+
+// 带emoji的旅行心情标签
+export const travelTags = [
+    { name: '放松心情', emoji: '😌' },
+    { name: '拍照打卡', emoji: '📸' },
+    { name: '美食探索', emoji: '🍜' },
+    { name: '海边度假', emoji: '🏖️' },
+    { name: '小众景点', emoji: '🌿' },
+    { name: '网红打卡', emoji: '🔥' },
+    { name: '亲子活动', emoji: '👨👩👧👦' },
+    { name: '情侣约会', emoji: '💑' },
+    { name: '独自旅行', emoji: '🧳' },
+    { name: '毕业旅行', emoji: '🎓' },
+    { name: '自驾游', emoji: '🚗' },
+    { name: '徒步', emoji: '🥾' },
+    { name: '露营', emoji: '⛺' },
+    { name: '日出日落', emoji: '🌅' },
+    { name: '星空', emoji: '🌃' }
+]
